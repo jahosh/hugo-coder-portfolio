@@ -4,7 +4,9 @@
       <div class="avatar"><img src="{{ . | absURL }}" alt="avatar"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
-    <h2>{{ .Site.Params.info }}</h2>
+    <p class="tagline">
+      Software Engineer at <a href="https://www.auditboard.com/">AuditBoard</a><br />
+      Living in Los Angeles, CA</p>
     {{ with .Site.Params.social }}
     <ul class="social-list">
       {{ range sort . "weight"}}
